@@ -43,8 +43,7 @@ public class MuellimDaxiletveSil extends SinifElaveEtVeSil {
     }
 
 
-
-    public String  muellimiSil() {
+    public String muellimiSil() {
         System.out.print("Siyahidan silmek isdediyniz muellimin ilk once adini:  ");
         String adSilme = scanner.nextLine();
 
@@ -70,6 +69,19 @@ public class MuellimDaxiletveSil extends SinifElaveEtVeSil {
         }
 
         return "Silme prosesi tamamlandi.";
+    }
+
+    public String muellimgoster() {
+        if (muellimVeSinif.isEmpty()) {
+            System.out.println("Muellim teyin edilmeyib...!");
+
+        } else {
+            System.out.println("Muellimlerin siyahisi: ");
+        }
+        for (Map.Entry<String, String> entry : muellimVeSinif.entrySet()) {
+            System.out.println("Ders dediyi sinif : " + entry.getKey() + " \nmuellim :" + entry.getValue());
+        }
+        return "";
     }
 }
 
