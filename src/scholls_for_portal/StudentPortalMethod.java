@@ -9,7 +9,7 @@ public class StudentPortalMethod {
     SinifElaveEtVeSil sinifElaveEtVeSil = new SinifElaveEtVeSil();
     MuellimDaxiletveSil muellimDaxiletveSil = new MuellimDaxiletveSil();
 
-    public void adminPortal() {
+    public String adminPortal() {
 
 
         while (true) {
@@ -64,11 +64,10 @@ public class StudentPortalMethod {
                     System.out.println();
                     break;
                 case 0:
-                    return;
+                    return null;
                 default:
                     System.out.println("false choice ❌");
             }
-
 
         }
 

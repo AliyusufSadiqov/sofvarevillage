@@ -20,12 +20,12 @@ public class StudentAddDelete extends SinifElaveEtVeSil {
         System.out.println("Enter the surname of the student");
         surname = scanner.nextLine();
 
-        while(true){
+        while (true) {
             System.out.print(name + " " + surname + " hansi sinife aiddir ? : ");
 
             String eduClass = scanner.nextLine();
 
-            if (eduClass.equalsIgnoreCase("yes")){
+            if (eduClass.equalsIgnoreCase("yes")) {
                 break;
             }
         }

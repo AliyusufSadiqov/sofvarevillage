@@ -11,7 +11,7 @@ public class SinifElaveEtVeSil {
 
     public List<String> sinifElaveEt() {
         while (true) {
-            System.out.print("Sinif və ya siniflərin adını daxil edin cixis ucun 0'a basin: ");
+            System.out.print("Sinif və ya siniflərin adını daxil edin, cixis ucun 0'a basin: ");
 
             String sinifAdi = scanner.nextLine().trim();
 
