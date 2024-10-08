@@ -43,10 +43,4 @@ public class LoginAndLogout {
         }
         return "";
     }
-
-    public static void main(String[] args) {
-        LoginAndLogout lg = new LoginAndLogout();
-        lg.loginRegister();
-        lg.loginEntered();
-    }
 }

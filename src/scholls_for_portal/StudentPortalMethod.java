@@ -8,6 +8,7 @@ public class StudentPortalMethod {
 
     SinifElaveEtVeSil sinifElaveEtVeSil = new SinifElaveEtVeSil();
     MuellimDaxiletveSil muellimDaxiletveSil = new MuellimDaxiletveSil();
+    StudentAddDelete studentAddDelete = new StudentAddDelete();
 
     public String adminPortal() {
 
@@ -55,13 +56,10 @@ public class StudentPortalMethod {
                     System.out.println(muellimDaxiletveSil.muellimgoster());
                     break;
                 case 7:
-                    System.out.println();
+                    System.out.println(studentAddDelete.StudentAddDelete());
                     break;
                 case 8:
-                    System.out.println();
-                    break;
-                case 9:
-                    System.out.println();
+                    System.out.println(studentAddDelete.studentDelete());
                     break;
                 case 0:
                     return null;
@@ -105,7 +103,11 @@ public class StudentPortalMethod {
                 case 3:
                     System.out.println(sinifElaveEtVeSil.siniflereBax());
                     break;
-
+                case 4:
+                    System.out.println(studentAddDelete.StudentAddDelete());
+                    break;
+                case 5:
+                    System.out.println(studentAddDelete.studentDelete());
                 case 0:
                     return;
                 default:

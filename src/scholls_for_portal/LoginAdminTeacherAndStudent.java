@@ -9,7 +9,7 @@ public class LoginAdminTeacherAndStudent extends LoginAndLogout {
         StudentPortalMethod st = new StudentPortalMethod();
         while (true) {
 
-            System.out.println("please enter role.");
+            System.out.println("Please enter role.");
             System.out.println("1.admin");
             System.out.println("2.teacher");
             System.out.println("3.student");
@@ -30,7 +30,7 @@ public class LoginAdminTeacherAndStudent extends LoginAndLogout {
                         switch (yesNo) {
                             case "1":
                                 if (usernameAndPassword.isEmpty()) {
-                                    System.out.println("First of all of the registration");
+                                    System.out.println("First of all of the registration....! ");
                                     loginAndLogout.loginRegister();
                                 }
                                 System.out.println(loginAndLogout.loginEntered());
@@ -61,11 +61,14 @@ public class LoginAdminTeacherAndStudent extends LoginAndLogout {
                         switch (yesNo) {
                             case "1":
                                 if (usernameAndPassword.isEmpty()) {
-                                    System.out.println("First of all of the registration");
+
+                                    System.out.println("First of all of the registration...!");
+
                                     loginAndLogout.loginRegister();
+                                    System.out.println(loginAndLogout.loginEntered());
+
+                                    st.teacherPortal();
                                 }
-                                System.out.println(loginAndLogout.loginEntered());
-                                st.teacherPortal();
                                 break;
 
                             case "2":
@@ -79,9 +82,9 @@ public class LoginAdminTeacherAndStudent extends LoginAndLogout {
                         }
                     }
 
-
                 } else {
                     System.out.println("There is no such role.");
+                    System.out.print("Select role: ");
                 }
 
             }

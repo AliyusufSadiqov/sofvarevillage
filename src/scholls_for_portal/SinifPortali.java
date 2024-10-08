@@ -20,8 +20,7 @@ public class SinifPortali {
             System.out.println("6. Bütün müəllimlərə bax");
             System.out.println("7. Tələbə əlavə et");
             System.out.println("8. Tələbə sil");
-            System.out.println("9. Bütün tələbələrə bax");
-            System.out.println("10. Çıxış");
+            System.out.println("0. Çıxış");
             System.out.print("Zəhmət olmasa seçim edin: ");
 
             int portalNomresi;
@@ -53,13 +52,10 @@ public class SinifPortali {
                     System.out.println(muellimDaxiletveSil.muellimgoster());
                     break;
                 case 7:
-                    System.out.println();
+                    System.out.println(studentAddDelete.StudentAddDelete());
                     break;
                 case 8:
-                    System.out.println();
-                    break;
-                case 9:
-                    System.out.println();
+                    System.out.println(studentAddDelete.studentDelete());
                     break;
                 case 0:
                     break;
