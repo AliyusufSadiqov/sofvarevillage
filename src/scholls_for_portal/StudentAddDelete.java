@@ -40,7 +40,7 @@ public class StudentAddDelete extends SinifElaveEtVeSil {
                 System.out.println(general);
 
             } else {
-                System.out.println(eduClass + "sinifinde dersde oxuyur");
+                System.out.println(eduClass + "sinifinde dersde oxuyur: ");
             }
         }
 
